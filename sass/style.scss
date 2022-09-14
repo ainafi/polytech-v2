@@ -1,0 +1,51 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+// header
+header{
+    
+    .navbar-brand{
+        img{
+            width: 75px;
+        }
+    }
+}
+// landing page
+.landing{
+    h1{
+        width: 57%;
+        margin-top: 48px;
+        font-size: 5rem;
+    }
+    span{
+        color: red;
+    }
+}
+
+// formation
+.formation{
+    .nbr-et{
+     margin-left: -3rem;
+    background: gray;
+    padding-left: 13rem !important;
+    border-radius: 58px;
+    span{
+        color: orange;
+    }
+
+    }
+
+    .genie{
+        margin: 5px;
+        border-left: rgb(98, 125, 160) !important;
+        &:hover{
+            background: rgb(98, 125, 160) ;
+        }
+    }
+  
+    
+}
