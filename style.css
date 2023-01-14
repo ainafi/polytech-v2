@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url("/asset/font/CinzelDecorative-Black.ttf");
+}
+@font-face {
+  font-family: "Bellota Text";
+  src: url("/asset/font/BellotaText-Regular.ttf");
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bellota Text";
+}
+
+display-1 {
+  font-family: "Cinzel Decorative";
+  font-size: 4rem;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +26,41 @@
   text-transform: capitalize;
 }
 
-header .navbar-brand img {
+.display-1 {
+  font-family: cinzel !important;
+  text-transform: uppercase;
+}
+
+header .navbar .navbar-brand {
+  width: 35%;
+}
+header .navbar .navbar-brand img {
   width: 75px;
+}
+header .navbar .nav-link .nav-items {
+  padding-left: 2px;
+  color: black !important;
+}
+header .navbar .user {
+  font-size: 2rem;
+}
+header .navbar .fa-bars {
+  display: none;
+}
+
+.scrollNav {
+  background: rgb(82, 73, 73);
+  color: black !important;
+}
+
+.textanim {
+  font-size: 3rem !important;
 }
 
 .landing h1 {
-  width: 57%;
-  margin-top: 48px;
-  font-size: 5rem;
+  width: 28%;
+  margin-top: 75px;
+  font-size: 4rem;
 }
 .landing span {
   color: red;
@@ -33,6 +81,67 @@ header .navbar-brand img {
 }
 .formation .genie:hover {
   background: rgb(98, 125, 160);
+}
+
+.card {
+  box-shadow: 6px 5px 20px 3px grey;
+}
+
+@media (max-width: 1080px) {
+  .navbar {
+    flex-wrap: nowrap !important;
+  }
+  .navbar .navbar-brand {
+    z-index: 99;
+  }
+  .navbar .navbar-brand span {
+    display: none;
+  }
+}
+@media (max-width: 857px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar .navbar-brand {
+    z-index: 99;
+  }
+  .navbar .navbar-brand span {
+    display: none;
+  }
+  .navbar .hamburger {
+    display: block !important;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 99;
+  }
+  .navbar .user {
+    cursor: pointer;
+    z-index: 99;
+  }
+  .navbar .nav {
+    position: fixed;
+    background-color: #030a22;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    line-height: 4;
+    height: 100%;
+    transition: 0.5s;
+  }
+  .navbar .nav.active {
+    left: 0;
+    transition: 0.5s ease-in;
+    padding-left: 0;
+    margin-top: -4rem;
+  }
+  .landing h1 {
+    font-size: 2rem;
+  }
+  .avis {
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
